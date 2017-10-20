@@ -55,7 +55,7 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-default">
+        <nav className="navbar navbar-default navbar-fixed-top">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span className="icon-bar"/>
