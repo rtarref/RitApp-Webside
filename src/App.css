@@ -1,0 +1,130 @@
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #89b6cd;
+    color: white;
+}
+
+.navbar-right { margin-right: 0px !important}
+
+.log {
+    margin: 5px 10px 0 0;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    width: 100%;
+}
+
+.banner {
+    padding: 40px;
+}
+
+.banner h1 {
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-bottom: 40px;
+}
+
+.banner .btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.banner .btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.banner .btn-1 {
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.banner .btn-1e {
+    overflow: hidden;
+}
+
+.banner .btn-1e:hover,
+.banner .btn-1e:active {
+    color: #89b6cd;
+    background: #fff;
+}
+
+.banner .btn-1e:hover:after {
+    height: 260%;
+    opacity: 1;
+}
+
+.banner .btn-1e:active:after {
+    height: 400%;
+    opacity: 1;
+}
+
+/* Surveillance */
+.surveillance .surveillance-title, .surveillance .surveillance-content {
+    margin-top: 40px;
+}
+
+.surveillance video {
+    width: 100%;
+    height: auto;
+}
+
+/* RitApp Forms */
+.ritapp-form {
+    width: 500px;
+}
+
+.ritapp-form h2 {
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.ritapp-form .actions {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ritapp-form img {
+    max-width: 50%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 20px auto 40px auto;
+}
+
+
