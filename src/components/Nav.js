@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { login, logout, isLoggedIn } from '../utils/AuthService';
+import { login, logout, isLoggedIn, getAccessUsername } from '../utils/AuthService';
 import '../App.css';
 import Modal from 'react-modal';
 
@@ -48,6 +48,10 @@ class Nav extends Component {
     login(username, password);
   }
 
+  getUsername() {
+    return getAccessUsername();
+  }
+
   render() {
     return (
       <div>
@@ -74,6 +78,11 @@ class Nav extends Component {
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
+              <li className="username">
+                {
+                  (isLoggedIn()) ? ( <label>{ this.getUsername() }</label> ) : ''
+                }
+              </li>
               <li>
                 {
                   (isLoggedIn()) ? ( <button className="btn btn-danger log" onClick={() => logout()}>Log out </button> ) : ( <button className="btn btn-info log" onClick={() => this.openModal()}>Log In</button> )

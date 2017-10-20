@@ -127,4 +127,9 @@ body, html {
     margin: 20px auto 40px auto;
 }
 
+li.username {
+    color: black;
+    margin: 12px 10px 0 0;
+}
+
 
